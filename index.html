@@ -90,12 +90,15 @@
 
                     <div class="section-title">
                         <h2>About</h2>
-                        <p>I am a Computer Science PhD candidate at <a href="http://engineering.wayne.edu/cs/">Wayne State University</a>,
-                            working at the <a target="_blank" href="http://seal.eng.wayne.edu/index.html">SEAL Lab</a> under the supervision of <a href="http://amiangshu.com/">Dr. Amiangshu Bosu</a>.
-                            My research interests lie in the area of Software Engineering. I am especially interested in software security, peer code review, mining software repositories, and empirical software engineering. 
-                            Currently, I am working on improving the effectiveness of peer code review in identifying software security defects. 
-                            <!--Prior to joining WSU, I was an MS student at <a target="_blank" href="https://cs.siu.edu/">SIUC</a>.--> I completed my 
-                            BS in Computer Science and Engineering from <a target="_blank" href="https://cse.buet.ac.bd/">Bangladesh University of Engineering and Technology</a>.</p>
+                        <p>I completed my PhD in Computer Science from <a target="_blank" href="http://engineering.wayne.edu/cs/">Wayne State University</a>.
+                            I worked at the <a target="_blank" href="http://seal.eng.wayne.edu/index.html">Software Engineering Analytics Lab (SEAL)</a> under the supervision of <a href="http://amiangshu.com/">Dr. Amiangshu Bosu</a>.
+                            My research interests lie in the area of Software Engineering, particularly in empirical 
+							software engineering, software security and vulnerabilities, peer code review, and mining 
+							software repositories. In my PhD thesis, I focused on improving the effectiveness of peer 
+							code review in identifying software security defects. Prior to starting my PhD, I worked in 
+							multiple software industries in my home country, Bangladesh. I completed my BSc in Computer 
+							Science and Engineering from 
+							<a target="_blank" href="https://cse.buet.ac.bd/">Bangladesh University of Engineering and Technology</a>.</p>
                     </div>
             </section>
             <!-- ======= Skills Section ======= -->
@@ -106,24 +109,39 @@
                         <h2>Research</h2>
                     </div>
 
-                    <h4>Improving the Effectiveness of Code Reviews in Identifying Security Defects</h4>
-                    <p>The project aims at improving the effectiveness of code review in identifying security defects. 
-                        With this goal, we are using code review data from several Open Source Software (OSS) projects to 
-                        analyze the characteristics of code reviews that can successfully identify security defects. 
-                        With the knowledge of this study, we aim to identify better strategies to do security code review.</p>
+                    <h4>Identifying the Challenges in Security Code Reviews and Building Effective Strategies</h4>
+                    <p>This project aims to identify the challenges developers face when conducting security code reviews 
+					and how to build effective security code review strategies. 
+                        To achieve this goal, we designed an online survey questionnaire and sent it to 
+						developers with expertise in participating in security code reviews. 
+						We conducted qualitative and quantitative analyses of their responses 
+						to identify the challenges developers face during security code reviews 
+						and to determine how we can develop effective security code review strategies.</p>
                     <br>
 
-                    <h4>Real-Time Identification of Potential Security Vulnerability Occurance</h4>
-                    <p>This project aims at identifying a potential security vulnerability once the vulnerable code change appears in code review. 
-                        With this goal, we are building machine learning-based models to automatically identify a code review as soon as a security concern appears
-                        in the code review discussion.</p>
+                    <h4>Real-Time Identification of Potential Security Concerns during Code Reviews</h4>
+                    <p>This project aims to identify a security concern as soon as that appears during code 
+					review. To achieve this goal, we leveraged code review comments and corresponding 
+					source code. We developed two types of deep learning classifiers: (i) code review 
+					comment based (BERT) and (ii) source code based (CodeBERT, GraphCodeBERT). The best 
+					ensemble model achieved an F1-score of 79.8% in identifying security concerns during 
+					code reviews.</p>
 
 
                     <!-- <li><h4>Identifing Common Mistakes in Code that Lead Security Vulnerability</h4> -->
 
                     <br>
+					
+					<h4>Identifying Why Security Defects go Unnoticed during Code Reviews</h4>
+                    <p>This project aims to identify code review attributes and developer characteristics that differ when
+						security defects escape code reviews. On this goal, we mined open-source software repositories and 
+						developed a MySQL database of code reviews. We developed a Logistic Regression model to distinguish
+						code reviews that miss security defects from code reviews that do not. The model achieves an AUC
+						score of 0.914 with an <i>R<sup>2</sup></i> of 0.6375. In addition, we identified and characterized security defects that
+						are more probable to escape code reviews.</p>
+                    <br>
 
-                    <h4>Identifing the Differences in Expressions of Sentiments during Code Reviews</h4>
+                    <h4>Identifying the Differences in Expressions of Sentiments during Code Reviews</h4>
                     <p>This study identifies the differences in expressions of sentiments between male and female developers during various 
                         software engineering tasks. With this goal, we mined the code review repositories of six popular OSS projects. 
                         We used a semi-automated approach leveraging the name as well as multiple social networks to identify the gender of 
@@ -142,6 +160,11 @@
 
                     <div class="section-title">
                         <h2>Publications</h2>
+						
+						<p><b style="background-color:#00284d;"> <font color="#d6d9dc"> &nbsp;TOSEM&nbsp;</font></b>
+                           Sayma Sultana, Jaydeb Sarker, Farzana Israt, <b>Rajshakhar Paul</b>, Amiangshu Bosu, "Automated Identification of Sexual Orientation and Gender Identity Discriminatory Texts from Issue Comments." 
+                            ACM Transactions on Software Engineering and Methodology, 2024 (under review).</p>
+
                         
                         <p><b style="background-color:#00284d;"> <font color="#d6d9dc"> &nbsp;ASE'2022&nbsp;</font></b>
                             <b>Rajshakhar Paul</b>, "ASTOR: An Approach to Identify Security Code Reviews." 
@@ -184,6 +207,7 @@
                         <h2>Recent News</h2>
 
                         <ul>
+						<li>May, 2023: Defended my PhD.</li>
                             <li>February, 2023: Served as a junior PC member at MSR 2023.</li>
                             <li>October 10-14, 2022: Attended ASE 2022 in Michigan, USA. Served as a Student Volunteer.</li>
                             <li>September 30, 2022: Completed my PhD Proposal Defense.</li>
